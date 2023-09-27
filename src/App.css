@@ -1,0 +1,226 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  height: 80px;
+  background-color: black;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  font-size: 1.5rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{text-decoration: none; color: rgb(184, 182, 182);}
+a:hover{
+  transition: all 0.3s ease;
+  color: rgb(36, 20, 155);
+}
+/*brandDropdown*/
+.brandDropdown{
+  display: none;
+}
+.brandDropdown ul{
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  position: absolute;
+  height: 180px;
+  width: 150px;
+}
+/*carsDropdown*/
+.carsDropdown{
+  display: none;
+}
+.carsDropdown ul{
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  position: absolute;
+  height: 180px;
+  width: 150px;
+}
+/*priceDropdown*/
+.priceDropdown{
+  display: none;
+}
+.priceDropdown ul{
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  position: absolute;
+  height: 180px;
+  width: 250px;
+}
+#other{font-size: 1rem;}
+.priceDropdown ul li{
+  width: 100%;
+}
+/*branchDropdown*/
+.branchDropdown{
+  display: none;
+}
+.branchDropdown ul{
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  position: absolute;
+  height: 180px;
+  width: 150px;
+}
+/*---------- NAV-END --------------------*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  height: 1300px;
+}
+.siteMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+}
+.siteMain img{
+  width: 250px;
+  height:166px ;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+}
+.siteMain button{
+  height: 20px;
+  width: 45%;
+  font-size: .5rem;
+  margin: 3px;
+}
+#btn-1{
+  color: white;
+  background-color: rgb(0, 121, 32);
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#btn-2{
+  color: white;
+  background-color: rgb(52, 182, 251);
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 62%;
+  height: 500px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#sideBarTitle{
+  color: white;
+}
+/*FOOTER*/
+footer{
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  background-color: black;
+  color:  #818181;
+}
+.footerContact{
+  list-style: none;
+}
+.footerSiteNavigator{
+  list-style: none;
+}
+footer li{
+  margin: 20px;
+}
+/*MODAL-BOX*/
+.infoModalBox{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 300px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+/*SPAN*/
+.close{
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
